@@ -1,0 +1,189 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <title>Welcome to my table</title>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th>Table Heading</th>
+                <th>Table Heading</th>
+                <th>Table Heading</th>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+            <tr>
+                <td rowspan="1">Table Data</td>
+                <td>Table Data
+                    <br>
+                    <table border="1">
+                        <tr>
+                            <th>Table Heading</th>
+                            <th>Table Heading</th>
+                            <th>Table Heading</th>
+                        </tr>
+                        <tr>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                        </tr>
+                        <tr>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                        </tr>
+                        <tr>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                            <td>Table Data</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Table Data</td>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+        </table>
+    </body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hot Delicious Item</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f6f6f6;
+    text-align: center;
+}
+
+/* Section */
+.section {
+    padding: 60px 20px;
+}
+
+/* Small Title */
+.section h4 {
+    color: green;
+    margin-bottom: 10px;
+}
+
+/* Main Title */
+.section h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.tabs button {
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tabs .active {
+    background: orange;
+    color: black;
+    border: none;
+}
+
+/* Food Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 220px;
+}
+
+.card img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.card h3 {
+    margin: 15px 0 5px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: gray;
+}
+</style>
+
+</head>
+<body>
+
+<div class="section">
+
+    <h4>About Our Food</h4>
+    <h1>Hot Delicious Item</h1>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <button class="active">Chicken Fry</button>
+        <button>Pizza</button>
+        <button>Burger</button>
+        <button>Deserts</button>
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+
+        <div class="card">
+            <img src="pizza-3.png">
+            <h3>Chicago Deep Pizza.</h3>
+            <p>Its the perfect dining experience where Experience quick and efficient</p>
+        </div>
+
+        <div class="card">
+            <img src="potato.png">
+            <h3>FAST FOOD COMBO</h3>
+            <p>Its the perfect dining experience where Experience quick and efficient</p>
+        </div>
+
+        <div class="card">
+            <img src="chicken-1.png">
+            <h3>GRILLED CHICKEN</h3>
+            <p>Its the perfect dining experience where Experience quick and efficient</p>
+        </div>
+
+        <div class="card">
+            <img src="cheeseburger.png">
+            <h3>WHOPPER BURGER KING</h3>
+            <p>Its the perfect dining experience where Experience quick and efficient</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
