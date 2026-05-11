@@ -1,189 +1,668 @@
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=0.1">
-        <title>Welcome to my table</title>
+        <title>Pizza Hut Navbar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <table border="1">
-            <tr>
-                <th>Table Heading</th>
-                <th>Table Heading</th>
-                <th>Table Heading</th>
-            </tr>
-            <tr>
-                <td>Table Data</td>
-                <td>Table Data</td>
-                <td>Table Data</td>
-            </tr>
-            <tr>
-                <td rowspan="1">Table Data</td>
-                <td>Table Data
-                    <br>
-                    <table border="1">
-                        <tr>
-                            <th>Table Heading</th>
-                            <th>Table Heading</th>
-                            <th>Table Heading</th>
-                        </tr>
-                        <tr>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
-                        </tr>
-                        <tr>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
-                        </tr>
-                        <tr>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
-                            <td>Table Data</td>
-                        </tr>
-                    </table>
-                </td>
-                <td>Table Data</td>
-            </tr>
-            <tr>
-                <td>Table Data</td>
-                <td>Table Data</td>
-                <td>Table Data</td>
-            </tr>
-        </table>
-    </body>
-</html>-->
+    <div class="navbar">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Hot Delicious Item</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #f6f6f6;
-    text-align: center;
-}
-
-/* Section */
-.section {
-    padding: 60px 20px;
-}
-
-/* Small Title */
-.section h4 {
-    color: green;
-    margin-bottom: 10px;
-}
-
-/* Main Title */
-.section h1 {
-    font-size: 48px;
-    margin-bottom: 30px;
-}
-
-/* Tabs */
-.tabs {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 50px;
-}
-
-.tabs button {
-    padding: 10px 25px;
-    border-radius: 25px;
-    border: 1px solid #ddd;
-    background: white;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.tabs .active {
-    background: orange;
-    color: black;
-    border: none;
-}
-
-/* Food Cards */
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.card {
-    width: 220px;
-}
-
-.card img {
-    width: 180px;
-    height: 180px;
-    object-fit: contain;
-}
-
-.card h3 {
-    margin: 15px 0 5px;
-    font-size: 18px;
-}
-
-.card p {
-    font-size: 14px;
-    color: gray;
-}
-</style>
-
-</head>
-<body>
-
-<div class="section">
-
-    <h4>About Our Food</h4>
-    <h1>Hot Delicious Item</h1>
-
-    <!-- Tabs -->
-    <div class="tabs">
-        <button class="active">Chicken Fry</button>
-        <button>Pizza</button>
-        <button>Burger</button>
-        <button>Deserts</button>
+    <!-- Logo -->
+    <div class="logo">
+        <img src="Logo-Pizza-Hut-2.png">
+        <h2>Pizza Hut</h2>
     </div>
 
-    <!-- Cards -->
-    <div class="cards">
+    <!-- Menu -->
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Shop</a>
+        <a href="#">Blog</a>
+        <a href="#">Pages</a>
+        <a href="#">Contact</a>
+    </div>
 
-        <div class="card">
-            <img src="pizza-3.png">
-            <h3>Chicago Deep Pizza.</h3>
-            <p>Its the perfect dining experience where Experience quick and efficient</p>
+    <!-- Right Side -->
+    <div class="right">
+        <div class="cart">
+            🛒
+            <span>0</span>
         </div>
 
-        <div class="card">
-            <img src="potato.png">
-            <h3>FAST FOOD COMBO</h3>
-            <p>Its the perfect dining experience where Experience quick and efficient</p>
-        </div>
+        <button class="btn">Contact Us</button>
 
-        <div class="card">
-            <img src="chicken-1.png">
-            <h3>GRILLED CHICKEN</h3>
-            <p>Its the perfect dining experience where Experience quick and efficient</p>
-        </div>
-
-        <div class="card">
-            <img src="cheeseburger.png">
-            <h3>WHOPPER BURGER KING</h3>
-            <p>Its the perfect dining experience where Experience quick and efficient</p>
-        </div>
-
+        <div class="menu-icon">≡</div>
     </div>
 
 </div>
+<section class="hero">
+
+  <!-- Overlay Content -->
+  <div class="content">
+    <p class="price">Starting at $24.00</p>
+    <h1>The best Food <br> Collection 2024</h1>
+    <p class="offer1">Exclusive offer <span><b>-35%</b></span> off this week</p>
+    <div class="curve"></div><br>
+
+    <button class="btn">🚚 Order Now</button>
+
+    <div class="subscribe">
+      <input type="email" placeholder="Your email address">
+      <button>Subscribe</button>
+    </div>
+  </div>
+
+  <!-- Discount -->
+  <div class="discount">
+    <img src="stroke.png" class="brush">
+
+    <!-- 🔥 Yellow Label -->
+  <div class="label">
+    <p class="top">UPTO</p>
+    <h2>20%</h2>
+    <p class="bottom">DISCOUNT</p>
+  </div>
+  </div>
+
+</section>
+
+<!-- 🔥 SPECIAL CARDS SECTION -->
+<section class="special">
+
+  <div class="special-container">
+
+    <!-- CARD 1 -->
+    <div class="special-card card1">
+      <div class="text2">
+        <p>Crispy, Every Bite Taste</p>
+        <h2>Delicious & <br> Hot Pizza</h2>
+        <button>Order Now →</button>
+      </div>
+      <img src="big-pizza.png" class="food-img">
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="special-card card2">
+      <div class="text2">
+        <p>Today Delicious</p>
+        <h2>French Fry</h2>
+        <button>Order Now →</button>
+      </div>
+      <img src="fries.png" class="food-img">
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="special-card card3">
+      <div class="text2">
+        <p>Crispy, Every Bite Taste</p>
+        <h2>Chicken & <br> French Fry</h2>
+        <button>Order Now →</button>
+      </div>
+      <img src="chicken-2.png" class="food-img">
+    </div>
+
+  </div>
+
+</section>
+
+<!-- 🔥 Pizza Section -->
+<section class="pizza-section">
+
+  <!-- Left Image -->
+  <div class="pizza-img">
+    <img src="pizza.jpg">
+
+    <div class="pizza-tag">
+      <h4>We Cook <br> Sandwiches For You</h4>
+    </div>
+  </div>
+
+  <!-- Right Content -->
+  <div class="pizza-content">
+    <p class="small">About Our Food</p>
+    <h2>The Best Delicious Food <br> Made From Us...</h2>
+
+    <p class="desc">
+      Its the perfect dining experience where every dish is crafted with fresh,
+      high-quality ingredients. Experience quick and efficient service that ensures
+      your food is served fresh.
+    </p><br>
+    <hr>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div><h3>250+</h3><p>Satisfied Clients</p></div>
+      <div><h3>153+</h3><p>Total Food Categories</p></div>
+      <div><h3>25+</h3><p>Award Win</p></div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="bottom">
+      <img src="image.jpg" class="user">
+      <img src="sign.jpg">
+      <div class="line">Foundation, Since 21st Oct, 2019</div>
+    </div>
+
+  </div>
+
+</section><br><br><br>
+
+<!-- 🔥 HOT DELICIOUS SECTION -->
+<section class="food-section">
+
+  <h4>About Our Food</h4>
+  <h1>Hot Delicious Item</h1>
+
+  <!-- Tabs -->
+  <div class="food-tabs">
+    <button class="active">Chicken Fry</button>
+    <button>Pizza</button>
+    <button>Burger</button>
+    <button>Deserts</button>
+  </div>
+
+  <!-- Food Cards -->
+  <div class="food-cards">
+
+    <div class="food-card">
+      <img src="pizza-3.png">
+      <h3>Chicago Deep Pizza.</h3>
+      <p>Its the perfect dining experience where Experience quick and efficient</p>
+    </div>
+
+    <div class="food-card">
+      <img src="potato.png">
+      <h3>FAST FOOD COMBO</h3>
+      <p>Its the perfect dining experience where Experience quick and efficient</p>
+    </div>
+
+    <div class="food-card">
+      <img src="chicken-1.png">
+      <h3>GRILLED CHICKEN</h3>
+      <p>Its the perfect dining experience where Experience quick and efficient</p>
+    </div>
+
+    <div class="food-card">
+      <img src="cheeseburger.png">
+      <h3>WHOPPER BURGER KING</h3>
+      <p>Its the perfect dining experience where Experience quick and efficient</p>
+    </div>
+
+  </div>
+
+</section>
+
+<div class="video-section">
+  <img src="bg-1.jpg" class="video-bg">
+
+  <div class="play-btn">
+    ▶
+  </div>
+</div>
+
+<!-- 🔥 DELIVERY BANNER -->
+<section class="delivery">
+
+  <div class="delivery-content">
+    <p class="small">Crispy, Every Bite Taste</p>
+    <h1>
+      30 Minutes Fast <br>
+      <span>Delivery</span> Challenge
+    </h1>
+  </div>
+
+  <div class="delivery-img">
+    <img src="delivery-boy.png">
+  </div>
+
+  <button class="order-btn">🚚 Order Now</button>
+
+</section>
+
+<!-- 🔥 FULL SECTION -->
+<section class="main-layout">
+
+  <!-- LEFT SIDE (PIZZA) -->
+  <div class="left-side">
+    <div class="banner">
+
+      <div class="text">
+        <h4>Today</h4>
+        <h1>Special Delicious</h1>
+        <p>Beef <span>chiness Pizza</span></p>
+      </div>
+
+      <img src="big-pizza.png" class="pizza">
+
+      <div class="offer">
+          <span class="top">UP TO</span>
+          <h2>50%</h2>
+          <span class="bottom">OFF</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="right-side">
+
+    <!-- 1 -->
+    <div class="box">
+      <img src="burger.png">
+      <div class="content1">
+        <h4>Delicious</h4>
+        <h2>Burger Combo</h2>
+        <p>Limited Offer / <b>$5</b></p>
+        <button>Order Now</button>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="box">
+      <img src="super.png">
+      <div class="content1">
+        <h4>Crispy, Every Bite Taste</h4>
+        <h2>SUPER DELICIOUS</h2>
+        <div class="badge">50% OFF</div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="box1">
+      <img src="orange.png">
+      <div class="content1">
+        <h4>Crispy, Every Bite Taste</h4>
+        <h2>FAST FOOD MEAL</h2>
+        <button>Order Now</button>
+      </div>
+      <img src="fries.png" class="extra">
+    </div>
+
+    <!-- 4 -->
+    <div class="box1">
+      <img src="offer.png">
+      <div class="content1">
+        <h4>Delicious Fried</h4>
+        <h2>CHICKEN</h2>
+      </div>
+      <img src="chicken.png" class="extra right">
+    </div>
+
+  </div>
+
+</section>
+
+<!-- 🔥 TRENDING FOOD MENU -->
+<section class="menu-section">
+
+  <p class="small">About Our Food</p>
+  <h1>Trending Food Menu</h1>
+
+  <div class="menu-box">
+
+    <!-- LEFT SIDE -->
+    <div class="menu-col">
+
+      <div class="menu-item">
+        <div>
+          <h3>CHICAGO DEEP PIZZA</h3>
+          <p>Its the perfect dining experience where Experience quick and efficient</p><br>
+        </div>
+        <span>$22.00</span>
+      </div>
+
+      <div class="menu-item">
+        <div>
+          <h3>Chicago Burger King.</h3>
+          <p>Its the perfect dining experience where Experience quick and efficient</p><br>
+        </div>
+        <span>$26.00</span>
+      </div>
+
+      <div class="menu-item">
+        <div>
+          <h3>Chicago French Fries.</h3>
+          <p>Its the perfect dining experience where Experience quick and efficient</p><br>
+        </div>
+        <span>$28.00</span>
+      </div>
+
+      <div class="menu-item">
+        <div>
+          <h3>Chicago Beef Jerky.</h3>
+          <p>Its the perfect dining experience where Experience quick and efficient</p><br>
+        </div>
+        <span>$39.00</span>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="menu-col">
+
+      <div class="menu-item">
+        <div>
+          <h3>CHINESE PASTA</h3>
+          <p>Its the perfect dining experience where Experience quick and efficient</p><br>
+        </div>
+        <span>$34.00</span>
+      </div>
+
+      <div class="menu-item">
+        <div>
+          <h3>Chicago Chicken Wings.</h3>
+          <p>Its the perfect dining experience where Experience quick and efficient</p><br>
+        </div>
+        <span>$39.00</span>
+      </div>
+
+      <div class="menu-item">
+        <div>
+          <h3>Chicago Deep Pasta.</h3>
+          <p>Its the perfect dining experience where Experience quick and efficient</p><br>
+        </div>
+        <span>$34.00</span>
+      </div>
+
+      <div class="menu-item">
+        <div>
+          <h3>Chicago Salad Recipes.</h3>
+          <p>Its the perfect dining experience where Experience quick and efficient</p><br>
+        </div>
+        <span>$26.00</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- 🔥 FOOD GALLERY -->
+<section class="gallery">
+
+  <div class="arrow left">⬅</div>
+
+  <div class="gallery-container">
+    <img src="1.jpg">
+    <img src="2.png">
+    <img src="3.jpg">
+  </div>
+
+  <div class="arrow right">➡</div>
+
+</section>
+
+<!-- 🔥 ABOUT / SERVICE SECTION -->
+<section class="about-section">
+
+  <!-- LEFT SIDE -->
+  <div class="about-left">
+
+    <p class="small">About Our Food</p>
+
+    <h1>
+      Where Quality Meet <br>
+      Excellent <span>Service.</span>
+    </h1>
+
+    <p class="desc">
+      Its the perfect dining experience where every dish is crafted with fresh,
+      high quality ingredients. Experience quick and efficient service that ensures
+      your food is served fresh.
+    </p>
+
+    <!-- FEATURES -->
+    <div class="features">
+
+      <div class="feature">
+        <img src="Icon-1.png" class="feature-icon">
+        <div>
+          <h4>Super Quality Food</h4>
+          <p>A team of dreamers and doers building unique interactive music and art</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <img src="Icon-2.png" class="feature-icon">
+        <div>
+          <h4>Well Reputation</h4>
+          <p>A team of dreamers and doers building unique interactive music and art</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BUTTON -->
+    <div class="about-bottom">
+
+      <button class="about-btn">More About Us</button>
+
+      <div class="author">
+          <span class="name">BRENDON GARREY</span>
+          <p>CUSTOMER’S EXPERIENCE IS OUR HIGHEST PRIORITY.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="about-right">
+    <img src="4.jpg">
+
+    <div class="tag1">Since / 1985</div>
+  </div>
+
+</section>
+
+<!-- 🔥 HOW WE SERVE SECTION -->
+<section class="process">
+
+  <p class="small-title">FOOD PROCESSING</p>
+  <h1>HOW WE SERVE YOU?</h1>
+
+  <div class="process-box">
+
+    <div class="step">
+      <h3>Cooking With Care</h3>
+      <p>Its the perfect dining experience where Experience quick and efficient</p>
+    </div>
+
+    <div class="step active">
+      <h3>QUICKLY DELIVERY</h3>
+      <p>Its the perfect dining experience where Experience quick and efficient</p>
+    </div>
+
+    <div class="step">
+      <h3>CHOOSE FOOD</h3>
+      <p>Its the perfect dining experience where Experience quick and efficient</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- 🔥 TESTIMONIAL SECTION -->
+<section class="testimonial">
+
+  <!-- Left Image -->
+  <div class="chef-img">
+    <img src="chef.jpg">  
+    
+    <div class="feedback">Feedback</div>
+  </div>
+
+  <!-- Right Content -->
+  <div class="testimonial-content">
+    <h3>Piter Bowman</h3>
+    <p class="role">Business CEO & Co Founder</p>
+
+    <p>“Thank You For Dinner Last Night. It Was Amazing!! I Have Say It’s The Best Meal I Have Had In Quite Some Time. Will Definitely Be Seeing More Eating Next Year.”</p>
+
+    <div class="stars">★★★★★</div>
+
+    <!-- Dots -->
+    <div class="dots">
+      <span class="active"></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- 🔥 NEWS & BLOG SECTION -->
+<section class="blog">
+
+  <p class="small-title">NEWS & BLOG</p>
+  <h1>Update News & Blog</h1>
+
+  <!-- Cards -->
+  <div class="blog-cards">
+
+    <!-- Card 1 -->
+    <div class="blog-card">
+      <div class="tag">Burger</div>
+      <img src="5.jpg">
+
+      <div class="blog-content">
+        <div class="meta">
+          <span>15 Feb 2024</span>
+          <span>Comments (0)</span>
+        </div>
+        <div class="green-line"></div>
+        <h3>Quick Cravings: Unraveling Fast Food Delights</h3>
+
+        <p>
+          There are many variations of passages of Lorem Ipsum available,
+          but majority have suffered Lorem haca ullamcorper donec ante habit believable.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="blog-card">
+      <div class="tag top">Hot Dog</div>
+      <img src="6.jpg">
+
+      <div class="blog-content">
+        <div class="meta">
+          <span>15 Feb 2024</span>
+          <span>Comments (0)</span>
+        </div>
+        <div class="green-line"></div>
+        <h3>Veggie Vibes: Garden Fresh Delightful Creations</h3>
+
+        <p>
+          There are many variations of passages of Lorem Ipsum available,
+          but majority have suffered Lorem haca ullamcorper donec ante habit believable.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="blog-card">
+      <div class="tag top">Pasta</div>
+      <img src="7.jpg">
+
+      <div class="blog-content">
+        <div class="meta">
+          <span>15 Feb 2024</span>
+          <span>Comments (2)</span>
+        </div>
+        <div class="green-line"></div>
+        <h3>Bold Bite: Exotic Flavors, Global Adventure</h3>
+
+        <p>
+          There are many variations of passages of Lorem Ipsum available,
+          but majority have suffered Lorem haca ullamcorper donec ante habit believable.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- 🔥 FOOD IMAGE STRIP -->
+<section class="food-strip">
+
+  <img src="8.png">
+  <img src="9.png">
+  <img src="10.jpg">
+  <img src="11.jpg">
+  <img src="12.jpg">
+
+</section>
+
+<!-- 🔥 FOOTER SECTION -->
+<!-- 🔥 FOOTER -->
+<section class="footer">
+
+  <div class="footer-wrapper">
+
+    <!-- LEFT RED CARD -->
+    <div class="footer-card">
+      <h2>pizza hut</h2>
+      <span class="sub">FOOD & RESTAURANT</span><br>
+
+      <p class="timing">
+        Tuesday – Saturday: 12:00pm – 23:00pm <br><br>
+        <h4><b>Closed on Sunday</b></h4>
+      </p><br><br>
+
+      <p class="rating">5 star rated on TripAdvisor</p><br>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="footer-col">
+      <h3>About</h3>
+      <ul>
+        <li>› Fredeka One</li>
+        <li>› Special Dish</li>
+        <li>› Reservation</li>
+        <li>› Contact</li>
+      </ul>
+    </div>
+
+    <!-- MENU -->
+    <div class="footer-col">
+      <h3>Menu</h3>
+      <ul>
+        <li>› Steaks</li>
+        <li>› Burgers</li>
+        <li>› Cocktails</li>
+        <li>› Bar B Q</li>
+        <li>› Desserts</li>
+      </ul>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="footer-news">
+      <h3>Newsletter</h3>
+      <p>Get recent news and updates.</p>
+
+      <input type="email" placeholder="Email Address">
+      <button>Subscribe</button>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2024 pizza hut | All showmen themes</p>
+
+    <div class="social">
+      <span>Facebook</span>
+      <span>Instagram</span>
+    </div>
+  </div>
+
+</section>
 
 </body>
 </html>
